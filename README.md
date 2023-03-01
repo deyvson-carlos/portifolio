@@ -19,16 +19,7 @@
 
 ![image](https://user-images.githubusercontent.com/102838847/210245150-d145626b-b268-4527-a1a9-378fddb83ff3.png)
 
-:red_circle: Linkedin - https://www.linkedin.com/in/luis-rodrigues202/ <br>
-:large_blue_circle: Github - https://github.com/thalys93 <br> 
-:white_circle: Instagram - https://www.instagram.com/luiss_xavierr/
 
-
-# 🔗Link do Portifólio
-
-➡ https://thalys93.github.io/portifolio-angular/
-
-<hr>
 
 ➡O Projeto é Divido em **Quatro Branches**
 
