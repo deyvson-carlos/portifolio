@@ -1,0 +1,33 @@
+#obj>p{
+  margin-top: -10px;
+  color: #b9b9b9;
+}
+
+#img{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+
+}
+
+img{
+  border-radius: 5px;
+}
+
+#img>h4{
+  margin-top: 10px;
+}
+
+#brn{
+  background-color: aliceblue;
+  border-radius: 0%;
+  padding: 5px;
+}
+
+img{
+  transition: 0.9s;
+}
+
+img:hover{
+  transform: scale(1.1);
+}

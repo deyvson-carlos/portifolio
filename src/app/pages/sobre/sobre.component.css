@@ -1,0 +1,59 @@
+#curio{
+  transition: 0.4s;
+}
+
+#curio:hover{
+  color: #fff0b3;
+}
+
+/* Detalhes Curiosos = curio */
+
+#container{
+  display: flex;
+  margin: 5px;
+}
+
+/* Definição do Container dos Links de curso */
+
+a>img{
+  border-radius: 10px;
+  margin-left: 25px;
+}
+
+#social>figcaption{
+  margin-left: 25px;
+}
+
+#social{
+  transition: 0.5s;
+}
+
+#social:hover{
+  transform: scale(0.9);
+  font-weight: bold;
+  color: #ffffbb;
+}
+
+/* Detalhes e animação hover */
+
+#deyvson{
+  font-weight: 500;
+}
+
+/* meu nome */
+
+p{
+  color: #b9b9b9;
+}
+
+h1{
+  margin-bottom: 15px ;
+}
+
+h4{
+  font-family: 'Raleway';
+}
+
+h3{
+  font-family: 'Raleway';
+}
