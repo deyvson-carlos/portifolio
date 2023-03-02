@@ -11,6 +11,7 @@
   #container{
     display: flex;
     margin: 5px;
+    max-width: 100%;
   }
   
   /* Definição do Container dos Links de curso */
@@ -57,4 +58,9 @@
   h3{
     font-family: 'Raleway';
   }
-  
+
+  @media screen and (max-width: 1080px) {
+    #container {
+      flex-direction: column;
+    }
+  }

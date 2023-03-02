@@ -13,6 +13,7 @@ import { ExpComponent } from './pages/exp/exp.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContatoComponent } from './pages/contato/contato.component';
 import { CursosComponent } from './pages/cursos/cursos.component';
+import { CicloComponent } from './ciclo/ciclo.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CursosComponent } from './pages/cursos/cursos.component';
     ProjectsComponent,
     ContatoComponent,
     CursosComponent,
+    CicloComponent,
   ],
   imports: [
     BrowserModule,

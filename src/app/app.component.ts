@@ -10,6 +10,12 @@ import { ComentarioService } from './services/comentario.service';
 })
 export class AppComponent  {
 
+  valor: number = 5;
+  mudarValor(){
+    this.valor++;
+  }
+
+
   constructor(private comentarioService: ComentarioService){
    AOS.init();
   }
@@ -19,6 +25,7 @@ export class AppComponent  {
     .then(d=>console.log(d))
     .catch(erro=>console.error(erro))
   }
+
 
   }
 
