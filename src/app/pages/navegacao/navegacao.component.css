@@ -44,9 +44,6 @@ li:hover{
   transform: scale(1.1);
 }
 
-/* Thalys Rodrigues */
-
-
 #diamante{
   font-family: 'Raleway' , sans-serif;
   color: aliceblue;
@@ -57,17 +54,10 @@ div{
   margin-left: 0.625rem;
 }
 
-#nome{
+.meuNome{
   display: inline;
-
   font-family: 'Raleway' , sans-serif;
   color: aliceblue;
   font-size: 1.7rem;
-
   transition: 0.5s;
-}
-
-#nome:hover{
-  color: beige;
-  font-weight: bold;
 }

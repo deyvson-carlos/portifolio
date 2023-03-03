@@ -14,9 +14,16 @@ export class CursosComponent implements OnInit {
   ifrs = './assets/img/ifrs.png'
   b7web = './assets/img/b7web.jpg'
 
+  cursos: string[] = ["PHP", "Laravel", "Angular"];
+  emAndamento: string[] = ["Angular 13","Angular avancado"];
+  mostrarCursos: boolean =  true;
+
   constructor() { }
 
   ngOnInit(): void {
+    for (let i=0; i<this.cursos.length; i++){
+      let curso = this.cursos[i];
+    }
   }
 
 }

@@ -6,17 +6,17 @@
     </div>
 
   <div id="grid">
-    <div id="obj" ngClass="card bg-dark">
+    <div id="obj" Class="card bg-dark">
       <img [src] = 'portifolio1' width="100%">
-      <div ngClass="card-body">
-        <h4 ngClass="card-title"> Portifólio </h4>
-        <h6 ngClass="card-subtitle mb2 text-primary" >Projeto Atual</h6>
-        <p ngClass="card-text">
+      <div Class="card-body">
+        <h4 Class="card-title"> Portifólio </h4>
+        <h6 Class="card-subtitle mb2 text-primary" >Projeto Atual</h6>
+        <p Class="card-text">
           Portifólio Criado em Angular
           Utilizando Diversas Tecnologias e Linguagens
         </p>
 
-        <p ngClass="card-text"> Sendo Algumas delas:
+        <p Class="card-text"> Sendo Algumas delas:
 
           <b id="typ" ngbTooltip="TypeScript é uma linguagem de programação de código aberto desenvolvida pela Microsoft. É um superconjunto sintático estrito de JavaScript e adiciona tipagem estática opcional à linguagem." placement="top">Typescript</b>
           -
@@ -29,42 +29,62 @@
          <div id="btndiv">
           <a target="_blank" rel="noopener" href="#"><button>Repositório do Projeto</button></a>
          </div>
+
+         <p>
+          <i class="bi bi-battery bi bi-battery-charging" [ngClass]="{'bi-battery': !nota, 'battery-charging': nota}" (click)="onClick()">  
+          </i>
+         </p>
+
       </div>
 
     </div>
 
-    <div id="obj" ngClass="card bg-dark">
+    <div id="obj" Class="card bg-dark">
       <img [src]="marvel" width="100%">
-      <div ngClass="card-body">
-      <h4 ngClass="card-title">Projeto Teorias Nerd <p id="detal">(Primeiro Projeto)</p></h4>
-      <h6 ngClass="card-subtitle mb2 text-danger">Site da Marvel</h6>
+      <div Class="card-body">
+      <h4 Class="card-title">Projeto Teorias Nerd <p id="detal">(Primeiro Projeto)</p></h4>
+      <h6 Class="card-subtitle mb2 text-danger">Site da Marvel</h6>
 
 
-        <p ngClass="card-text">Projeto Elaborado por mim, onde ao longo do tempo fui aprimorando</p>
+        <p Class="card-text">Projeto Elaborado por mim, onde ao longo do tempo fui aprimorando</p>
 
-      <p ngClass="card-text">Possuia a Proposta de ser um grande site e app, voltado ao mundo do MCU.</p>
+      <p Class="card-text">Possuia a Proposta de ser um grande site e app, voltado ao mundo do MCU.</p>
 
         <div id="btndiv">
-        <a target="_blank" rel="noopener" href="https://deyvson-carlos.github.io/DK_TeoriasNerd/"><button >Acessar Site</button></a>
+        <a target="_blank" rel="noopener" href="https://deyvson-carlos.github.io/DK_TeoriasNerd/">
+
+          
+          <button [ngStyle]="{ 'backgroundColor': (site ? 'red' : 'blue'), 'color': (site ? 'white' : 'black')}">Acessar Site</button></a>
+
         <a target="_blank" rel="noopener" href="https://github.com/deyvson-carlos/DK_TeoriasNerd"><button >Repositório</button></a>
         </div>
 
+        <!-- <p>
+          <i class="bi bi-battery bi bi-battery-charging" [ngClass]="{'bi-battery': !nota, 'battery-charging': nota}" (click)="onClick()">  
+          </i>
+         </p> -->
+
       </div>
 
     </div>
 
-    <div id="obj" ngClass="card bg-dark" >
+    <div id="obj" Class="card bg-dark" >
       <img [src]="locadora" width="100%">
-      <div ngClass="card-body">
-        <h4 ngClass="card-title">Locadora de Carros</h4>
-        <h6 ngClass="card-subtitle mb2 text-warning">Laravel e Vue.Js</h6>
+      <div Class="card-body">
+        <h4 Class="card-title">Locadora de Carros</h4>
+        <h6 Class="card-subtitle mb2 text-warning">Laravel e Vue.Js</h6>
 
-        <p ngClass="card-text"> Projeto utilizando APIs, WebServices e Rest</p>
+        <p Class="card-text"> Projeto utilizando APIs, WebServices e Rest</p>
         <p> Proposta era um Sistema simples de locadora de veículos.</p>
 
           <div id="btndiv">
           <a target="_blank" rel="noopener" href="https://github.com/deyvson-carlos/AppCarrosLocadora"><button >Repositório</button></a>
           </div>
+
+          <!-- <p>
+            <i class="bi bi-battery bi bi-battery-charging" [ngClass]="{'bi-battery': !nota, 'battery-charging': nota}" (click)="onClick()">  
+            </i>
+           </p> -->
 
       </div>
 

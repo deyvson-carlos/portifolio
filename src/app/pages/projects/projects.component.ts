@@ -11,9 +11,18 @@ export class ProjectsComponent implements OnInit {
   marvel = './assets/img/marvel/marvel.png'
   locadora = './assets/img/locadora/locadora.png'
 
+  site: boolean = false;
+
+  nota: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.site = !this.site;
+  }
+
+  onClick(){
+    this.nota = !this.nota;
   }
 
 }

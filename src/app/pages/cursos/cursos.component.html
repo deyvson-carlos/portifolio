@@ -50,7 +50,28 @@
 
           </div>
 
+          <hr>
+
+          <h4 data-aos="fade-right" data-aos-duration="1500"> Certificado em: </h4>
+
+          <ul>
+            <li *ngFor="let curso of cursos, let i= index">
+              {{ i + 1}} - {{ curso }}
+            </li>
+          </ul>
         
+          <hr>
+
+          <h4 data-aos="fade-right" data-aos-duration="1500"> Cursos em Andamento </h4>
+
+          <div *ngIf="emAndamento.length > 0">
+            <p>Existe dois cursos em andamento</p>
+          </div>
+          
+          <div *ngIf="!mostrarCursos">
+            <p>Não Existe curso em andamento</p>
+
+          </div>
   
     </div>
   
