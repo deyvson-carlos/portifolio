@@ -50,13 +50,6 @@ li:hover{
   font-weight: bold;
 }
 
-
-footer{
-  display: flex;
-  justify-content: center;
-  color: aliceblue;
-}
-
 #baixo{
 position: absolute;
   top: 50px;
@@ -77,5 +70,17 @@ position: absolute;
 #contato:hover{
   color: aliceblue;
   height: 30px;
+}
+
+.api{
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
+}
+
+.rodape{
+  display: flex;
+  justify-content: center;
+  color: aliceblue;
 }
 

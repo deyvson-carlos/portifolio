@@ -7,10 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ExpComponent implements OnInit {
   nagem = './assets/img/nagem.png'
-  // gnu = './assets/img/gnu.png'
-  // dwu = './assets/img/dwu.png'
-  // ferragem = './assets/img/ferra.svg'
-
   constructor() { }
 
   ngOnInit(): void {

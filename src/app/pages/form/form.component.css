@@ -44,3 +44,9 @@ input[type="submit"]:hover{
   border-left: 3px solid #dc3545;
   padding-left: 0.2em;
 }
+
+@media screen and (max-width: 1080px) {
+  .midia {
+    width: 100%;
+  }
+}

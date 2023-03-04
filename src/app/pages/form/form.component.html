@@ -1,5 +1,5 @@
 <main>
-  <section>
+  <section >
     <h1 data-aos="fade-right" data-aos-duration="1000"> Formulário </h1>
 
     <article data-aos="zoom-out-right" data-aos-duration="1500">
@@ -11,7 +11,7 @@
       </p>
       </article>
 
-       <form (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
+       <form class="midia" (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
           <div class="form-group">
             <label for="title">Título</label>
             <input type="text" placeholder="coloque um título" formArrayName="title" required />
@@ -35,8 +35,7 @@
             <input type="file">
           </div>
 
-          <input  type="submit" value="{{ btnText }}">
-          <!-- [btnText]="btnText" -->
+          <input  type="submit" value="{{ btnText }}" >
 
        </form>
     <hr>
