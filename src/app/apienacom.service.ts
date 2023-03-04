@@ -11,6 +11,6 @@ export class ApiEnacomService {
   constructor(private httpClient: HttpClient) { }
 
   retornaAPI(){
-    return this.httpClient.get<IContato>(this.urlTest).toPromise();
+    return this.httpClient.get<IContato>(this.urlTest);
   }
 }
