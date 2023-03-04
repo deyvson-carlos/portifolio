@@ -1,0 +1,54 @@
+<main>
+  <section>
+    <h1 data-aos="fade-right" data-aos-duration="1000"> Formulário </h1>
+
+    <article data-aos="zoom-out-right" data-aos-duration="1500">
+      <p>
+        Olá, seja bem vindo(a) ao meu portifólio!
+        <br>
+        Neste ambiente você poderá conhecer um pouco mais sobre mim e minhas habilidades. Gostaria de contar com a sua opinião, conte-me o que você mais gostou por aqui e preencha este formulário.
+
+      </p>
+      </article>
+
+       <form (ngSubmit)="submit()" [formGroup]="momentForm" #formDir="ngForm">
+          <div class="form-group">
+            <label for="title">Título</label>
+            <input type="text" placeholder="coloque um título" formArrayName="title" required />
+          </div>
+
+          <div *ngIf="title.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="title.errors?.['required']">O título é obrigatório.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="description">Descrição:</label>
+            <textarea placeholder="O que aconteceu lá?" formControlName="description" required></textarea>
+          </div>
+
+          <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
+            <p *ngIf="description.errors?.['required']">A descrição é obrigatório.</p>
+          </div>
+
+          <div class="form-group">
+            <label for="image">Coloque a foto que mais marcou:</label>
+            <input type="file">
+          </div>
+
+          <input  type="submit" value="{{ btnText }}">
+          <!-- [btnText]="btnText" -->
+
+       </form>
+    <hr>
+
+       <div class="class">
+        <h1 data-aos="fade-right" data-aos-duration="1000"> Qual é a nota: {{ myNumber }} </h1>
+
+        <app-change-number (changeNumber)="onChangeNumber()"></app-change-number>
+       </div>
+
+       <hr>
+
+  </section>
+
+</main>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import * as AOS from 'aos';
-import { ComentarioService } from './services/comentario.service';
 
 
 @Component({
@@ -15,21 +14,8 @@ export class AppComponent  {
     this.valor++;
   }
 
-
-  constructor(private comentarioService: ComentarioService){
+  constructor(){
    AOS.init();
   }
 
-  listaApiGet(){
-    this.comentarioService.listaGet()
-    .then(d=>console.log(d))
-    .catch(erro=>console.error(erro))
-  }
-
-
-  }
-
-
-
-
-
+}

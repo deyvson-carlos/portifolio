@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CicloComponent } from './ciclo.component';
+import { NewMomentComponent } from './new-moment.component';
 
-describe('CicloComponent', () => {
-  let component: CicloComponent;
-  let fixture: ComponentFixture<CicloComponent>;
+describe('NewMomentComponent', () => {
+  let component: NewMomentComponent;
+  let fixture: ComponentFixture<NewMomentComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CicloComponent ]
+      declarations: [ NewMomentComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(CicloComponent);
+    fixture = TestBed.createComponent(NewMomentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

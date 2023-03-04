@@ -7,6 +7,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { InicioComponent } from './pages/inicio/inicio.component';
 import { ExpComponent } from './pages/exp/exp.component';
 import { ContatoComponent } from './pages/contato/contato.component';
+import { FormComponent } from './pages/form/form.component';
 
 const routes: Routes = [
 
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'Projetos', component: ProjectsComponent , title:'Portifólio- Projetos'},
   { path: 'Experiência', component: ExpComponent , title: 'Portifólio - Experiência'},
   { path: 'Contato' , component: ContatoComponent, title: 'Portifólio - Contato'},
-  { path: 'Cursos' , component: CursosComponent, title: 'Portifólio - Cursos'}
+  { path: 'Cursos' , component: CursosComponent, title: 'Portifólio - Cursos'},
+  { path: 'Form' , component: FormComponent, title: 'Portifólio - Formulário'}
 
 ];
 

@@ -1,11 +1,11 @@
-export interface Contact {
+export interface IContato {
     name: string;
     tel: string;
     email: string;
 }
 
-export interface ResponseContact {
+/* export interface ResponseContact {
     subject_matter: string;
     comment: string;
-    contact: Contact;
-}
+    contact: IContato;
+} */
