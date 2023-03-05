@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AppComponent } from 'src/app/app.component';
 
 import { FormControl, FormGroup, Validators } from '@angular/forms';
@@ -10,7 +10,9 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit {
-  @Input() btnText!: string;
+  btnText = 'Compartilhar!';
+
+  Novo_valor: string = 'Enviar!'
 
   momentForm! : FormGroup;
   

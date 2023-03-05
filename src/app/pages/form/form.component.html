@@ -23,7 +23,7 @@
 
           <div class="form-group">
             <label for="description">Descrição:</label>
-            <textarea placeholder="O que aconteceu lá?" formControlName="description" required></textarea>
+            <textarea placeholder="Diga-me o que achou?" formControlName="description" required></textarea>
           </div>
 
           <div *ngIf="description.invalid && formDir.submitted" class="validation-error">
@@ -31,11 +31,11 @@
           </div>
 
           <div class="form-group">
-            <label for="image">Coloque a foto que mais marcou:</label>
+            <label for="image">Tire um print do que mais você gostou:</label>
             <input type="file">
           </div>
 
-          <input  type="submit" value="{{ btnText }}" >
+          <app-new-moment [btnText]="Novo_valor"></app-new-moment>
 
        </form>
     <hr>
