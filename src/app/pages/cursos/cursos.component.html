@@ -1,79 +1,101 @@
 <section>
-    <div>
-    
-        <h4 data-aos="fade-right" data-aos-duration="1500"> Minha Vida Acadêmica </h4>
-          <p data-aos="fade-right" data-aos-duration="1500"> Sempre busquei ser um aluno dedicado, tirava notas boas, só fui fazer uma faculdade como tanto eu desejava depois de muitos anos após a conclusão do ensino médio. Recentemente concluí na FICR o curso de Análise e desenvolvimento de sistemas, entendo que ainda não é o suficiente, mas tenho feito outros cursos EAD em Diversas plataformas, afinal o mundo hoje é baseado em internet e ter mais conhecimento para aprimorar o currículo.
-          </p>
-          <hr>
-          <h4 data-aos="fade-right" data-aos-duration="1500"> Faculdade </h4>
+  <div>
+    <h4 data-aos="fade-right" data-aos-duration="1500">Minha Vida Acadêmica</h4>
+    <p data-aos="fade-right" data-aos-duration="1500">
+      Sempre busquei ser um aluno dedicado, tirava notas boas, só fui fazer uma
+      faculdade como tanto eu desejava depois de muitos anos após a conclusão do
+      ensino médio. Recentemente concluí na FICR o curso de Análise e
+      desenvolvimento de sistemas, entendo que ainda não é o suficiente, mas
+      tenho feito outros cursos EAD em Diversas plataformas, afinal o mundo hoje
+      é baseado em internet e ter mais conhecimento para aprimorar o currículo.
+    </p>
+    <hr />
+    <h4 data-aos="fade-right" data-aos-duration="1500">Faculdade</h4>
 
-          <div id="container" data-aos="fade-up" data-aos-duration="3000">
-            <figure id="social">
-              <a target="_blank" rel="noopener" href="https://ficr.catolica.edu.br/portal/estudante/"><img [src] = "ficr" width="100px"></a>
+    <div id="container" data-aos="fade-up" data-aos-duration="3000">
+      <figure id="social">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://ficr.catolica.edu.br/portal/estudante/"
+          ><img [src]="ficr" width="100px"
+        /></a>
 
-              <figcaption>2021 à 2022 </figcaption>
-              <figcaption> Acessar o Site </figcaption>
-              
-            </figure>
-    
-            </div>
-
-          <hr>
-
-          <h4 data-aos="fade-right" data-aos-duration="1500"> Cursos EAD </h4>
-
-          <div id="container" data-aos="fade-up" data-aos-duration="3000">
-          <figure id="social" ngClass="social">
-            <a target="_blank" rel="noopener" href="https://web.dio.me/home"><img [src] = "dio" width="100px"></a>
-            <figcaption> Acessar o Site </figcaption>
-          </figure>
-
-          <figure id="social">
-            <a target="_blank" rel="noopener" href="https://www.cursoemvideo.com/login/"><img [src] = "curso_em_video" width="100px"></a>
-            <figcaption> Acessar o Site </figcaption>
-          </figure>
-
-          <figure id="social">
-            <a target="_blank" rel="noopener" href="https://moodle.ifrs.edu.br/login/index.php"><img [src] = "ifrs" width="100px"></a>
-            <figcaption> Acessar o Site </figcaption>
-          </figure>
-
-          <figure id="social">
-            <a target="_blank" rel="noopener" href="https://alunos.b7web.com.br/login"><img [src] = "b7web" width="100px"></a>
-            <figcaption> Acessar o Site </figcaption>
-          </figure>
-
-          <figure id="social">
-            <a target="_blank" rel="noopener" href="https://www.udemy.com/"><img [src] = "udemy" width="100px"></a>
-            <figcaption> Acessar o Site </figcaption>
-          </figure>
-
-          </div>
-
-          <hr>
-
-          <h4 data-aos="fade-right" data-aos-duration="1500"> Certificado em: </h4>
-
-          <ul>
-            <li *ngFor="let curso of cursos, let i= index">
-              {{ i + 1}} - {{ curso }}
-            </li>
-          </ul>
-        
-          <hr>
-
-          <h4 data-aos="fade-right" data-aos-duration="1500"> Cursos em Andamento </h4>
-
-          <div *ngIf="emAndamento.length > 0">
-            <p>Existe dois cursos em andamento</p>
-          </div>
-          
-          <div *ngIf="!mostrarCursos">
-            <p>Não Existe curso em andamento</p>
-
-          </div>
-  
+        <figcaption>2021 à 2022</figcaption>
+        <figcaption>Acessar o Site</figcaption>
+      </figure>
     </div>
-  
-  </section>
-  
+
+    <hr />
+
+    <h4 data-aos="fade-right" data-aos-duration="1500">Cursos EAD</h4>
+
+    <div id="container" data-aos="fade-up" data-aos-duration="3000">
+      <figure id="social" ngClass="social">
+        <a target="_blank" rel="noopener" href="https://web.dio.me/home"
+          ><img [src]="dio" width="100px"
+        /></a>
+        <figcaption>Acessar o Site</figcaption>
+      </figure>
+
+      <figure id="social">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://www.cursoemvideo.com/login/"
+          ><img [src]="curso_em_video" width="100px"
+        /></a>
+        <figcaption>Acessar o Site</figcaption>
+      </figure>
+
+      <figure id="social">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://moodle.ifrs.edu.br/login/index.php"
+          ><img [src]="ifrs" width="100px"
+        /></a>
+        <figcaption>Acessar o Site</figcaption>
+      </figure>
+
+      <figure id="social">
+        <a
+          target="_blank"
+          rel="noopener"
+          href="https://alunos.b7web.com.br/login"
+          ><img [src]="b7web" width="100px"
+        /></a>
+        <figcaption>Acessar o Site</figcaption>
+      </figure>
+
+      <figure id="social">
+        <a target="_blank" rel="noopener" href="https://www.udemy.com/"
+          ><img [src]="udemy" width="100px"
+        /></a>
+        <figcaption>Acessar o Site</figcaption>
+      </figure>
+    </div>
+
+    <hr />
+
+    <h4 data-aos="fade-right" data-aos-duration="1500">Certificado em:</h4>
+
+    <ul>
+      <li *ngFor="let curso of cursos; let i = index">
+        {{ i + 1 }} - {{ curso }}
+      </li>
+    </ul>
+
+    <hr />
+
+    <h4 data-aos="fade-right" data-aos-duration="1500">Cursos em Andamento</h4>
+
+    <div *ngIf="emAndamento.length > 0">
+      <p>Existe dois cursos em andamento</p>
+    </div>
+
+    <div *ngIf="!mostrarCursos">
+      <p>Não Existe curso em andamento</p>
+    </div>
+  </div>
+</section>
