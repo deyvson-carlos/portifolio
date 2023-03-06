@@ -56,12 +56,6 @@ h1{
 }
 
 
-
-
-
-
-
-
 /* Celulares  Responsividade 100% */
 @media (max-width: 480px) {
 
@@ -88,8 +82,15 @@ section{
   align-items: center;
 }
 
-#thalys{
+#eu{
   padding-left: 40px ;
+  margin-top: 219px;
+  width: 100%;
+  margin-left: -100px;
+}
+
+#idt{
+  font-size: 1.3rem;
 }
 
 /* Componente Inicio */
